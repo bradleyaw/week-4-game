@@ -11,10 +11,10 @@ $(document).ready(function () {
   function reset() {
     result = 0;
     match = Math.floor(Math.random() * 100) + 19;
-    $("#matchMe").html(match);
-    $("#wins").html(wins);
+    $("#matchMe").text(match);
+    $("#wins").text(wins);
     $("#losses").text(losses);
-    $("#total").html(result);
+    $("#total").text(result);
     for (var i = 0; i < 4; i++) {
       crystalArray[i] = Math.floor(Math.random() * 12) + 1;
     }
