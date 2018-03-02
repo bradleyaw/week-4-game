@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <title>Crystal Collectors</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-       
-    </head>
-    <body>
-        <div >Match me by adding the crystals below!<br><span id="matchMe"></span></div>
-        <div>
-            Wins: <span id="wins">0</span>
-            <br/>
-            Losses: <span id="losses">0</span>
-        </div>
-        <div>
-            <img src="http://via.placeholder.com/150x150" class="color1" alt="...">
-            <img src="http://via.placeholder.com/150x150" class="color2" alt="...">
-            <img src="http://via.placeholder.com/150x150" class="color3" alt="...">
-            <img src="http://via.placeholder.com/150x150" class="color4" alt="...">
-        </div>
-        <div>
-            <p>Your Total Score is:</p>
-            <p id="total"></p>
-        </div>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="assets/javascript/game.js"></script>
 
-    </body>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Crystal Collectors</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Crystal Collector</h1>
+        Match me:
+        <span id="matchMe"></span>
+    </div>
+    <div class="container">
+        Wins:
+        <span id="wins">0</span>
+        Losses:
+        <span id="losses">0</span>
+    </div>
+    <div class="rules container">
+        Begin by clicking a crystal below. Each has been assigned a random number between 1 and 12 that is added to the number below.
+        Now match the below number to the one above!
+    </div>
+    <div class="container">
+        <img src="assets/images/grenCrystal.png" class="color1" alt="...">
+        <img src="assets/images/purpCrystal.png" class="color2" alt="...">
+        <img src="assets/images/blueCrystal.png" class="color3" alt="...">
+        <img src="assets/images/orgnCrystal.png" class="color4" alt="...">
+    </div>
+    <div class="container">
+        <p>Your Total Score is:
+            <span id="total"></span>
+        </p>
+
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
 </html>

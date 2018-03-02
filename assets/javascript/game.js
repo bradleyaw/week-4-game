@@ -19,66 +19,66 @@ $(document).ready(function () {
 
   reset();
 
-  
 
-    $(".color1").on("click", function () {
-      result = result + crystalArray[0];
-      $("#total").html(result);
-      if (result === match) {
-        wins++;
-        $("#wins").html(wins);
-        reset();
-      }
-      else if (result > match) {
-        losses++;
-        $("#losses").text(losses);
-        reset();
-      }
-    });
 
-    $(".color2").on("click", function () {
-      result = result + crystalArray[1];
-      $("#total").html(result);
-      if (result === match) {
-        wins++;
-        $("#wins").html(wins);
-        reset();
-      }
-      else if (result > match) {
-        losses++;
-        $("#losses").text(losses);
-        reset();
-      }
-    });
+  $(".color1").on("click", function () {
+    result = result + crystalArray[0];
+    $("#total").html(result);
+    if (result === match) {
+      wins++;
+      $("#wins").html(wins);
+      reset();
+    }
+    else if (result > match) {
+      losses++;
+      $("#losses").text(losses);
+      reset();
+    }
+  });
 
-    $(".color3").on("click", function () {
-      result = result + crystalArray[2];
-      $("#total").html(result);
-      if (result === match) {
-        wins++;
-        $("#wins").html(wins);
-        reset();
-      }
-      else if (result > match) {
-        losses++;
-        $("#losses").text(losses);
-        reset();
-      }
-    });
+  $(".color2").on("click", function () {
+    result = result + crystalArray[1];
+    $("#total").html(result);
+    if (result === match) {
+      wins++;
+      $("#wins").html(wins);
+      reset();
+    }
+    else if (result > match) {
+      losses++;
+      $("#losses").text(losses);
+      reset();
+    }
+  });
 
-    $(".color4").on("click", function () {
-      result = result + crystalArray[3];
-      $("#total").html(result);
-      if (result === match) {
-        wins++;
-        $("#wins").html(wins);
-        reset();
-      }
-      else if (result > match) {
-        losses++;
-        $("#losses").text(losses);
-        reset();
-      }
-    });
+  $(".color3").on("click", function () {
+    result = result + crystalArray[2];
+    $("#total").html(result);
+    if (result === match) {
+      wins++;
+      $("#wins").html(wins);
+      reset();
+    }
+    else if (result > match) {
+      losses++;
+      $("#losses").text(losses);
+      reset();
+    }
+  });
+
+  $(".color4").on("click", function () {
+    result = result + crystalArray[3];
+    $("#total").html(result);
+    if (result === match) {
+      wins++;
+      $("#wins").html(wins);
+      reset();
+    }
+    else if (result > match) {
+      losses++;
+      $("#losses").text(losses);
+      reset();
+    }
+  });
 
 })
